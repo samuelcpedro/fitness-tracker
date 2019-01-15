@@ -1,0 +1,40 @@
+#container {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  border: 1px solid black;
+  flex-direction: row;
+  /* default is row */
+  /* flex-direction is the main axis */
+  /* main axis goes from top to bottom "colummn" or left to right "row"*/
+  /* justify-content: center; */
+  justify-content: flex-start;
+  /*
+    We don't see any change but if we add a height greater than the height of the combined elements. 
+    We see that justify to the main axis that is top to bottom
+  */
+  align-items: center;
+  /* align-items is the cross axis */
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  /* flex: 1; */
+  /* Will work like weight in android  */
+  /* background-color: red; */
+}
+
+#child1 {
+  background-color: red;
+  flex: 2;
+  /* Will work like weight in android  */
+}
+
+#child2 {
+  background-color: green;
+}
+
+#child3 {
+  background-color: blue;
+}
